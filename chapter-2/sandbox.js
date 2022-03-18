@@ -57,11 +57,27 @@ console.log(fullName.length);
 //  string methods
 
 console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
+let result = fullName.toLowerCase();
+
+console.log(result);
 
 
 let index = email.indexOf('@'); // finding index number
 console.log(index);
+
+//common string method .
+
+    // from previous mail acount
+
+//let resul = email.lastIndexOf('i');
+//et resul = email.slice(0,10);   // for slicing some 
+
+//let resul = email.substring(0, 5);  // for made a sub string (starting number, string number)
+let resul = email.replace('h', 'r')  // replace a charecter (given ch,  wanted ch) . if mani ch are same then change only first index
+
+console.log(resul);
+
+
 
 
 
