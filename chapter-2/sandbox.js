@@ -78,7 +78,89 @@ let resul = email.replace('h', 'r')  // replace a charecter (given ch,  wanted c
 console.log(resul);
 
 
+// math operator  +, -, *, /, **, %
 
+let redius = 10;
+const pi = 3.14;
+
+console.log(redius, pi);
+
+let sum = redius + 5;
+let sub = redius - 5;
+let mult = redius * 5;
+let dev = redius / 5;
+
+
+let power = redius ** 5;
+let mod = redius % 5;
+
+let area = pi * redius**2
+
+
+console.log(sum);
+console.log(sub);
+console.log(mult);
+console.log(dev);
+
+console.log(mod);
+console.log(power);
+
+console.log(area);
+
+
+// order of operation  _ B I D M A S
+
+let operation = 5 * (10-3)**2;
+
+console.log(operation);
+
+
+let likes = 10;
+ // likes = likes + 1; same of likes++
+ // likes++;
+ // likes--;   // same of likes = likes - 1
+
+ likes += 10;   // same to likews = likes + 5
+ // likes -= 5  // same to likews = likes - 5
+ // likes *= 5  // same to likews = likes * 5
+ // likes /= 5  // same to likews = likes / 5
+ // likes -= 5  // same to likews = likes - 5
+console.log(likes);
+
+
+// NaN  - not a number
+
+console.log(5 / 'hello');
+
+
+let coment =  'the blog has ' + likes + ' likes';
+console.log(coment);
+
+//template strings
+
+let title = 'best resds of 2022';
+let author = 'hridoy'
+let like = 30;
+
+// concatenation way 
+
+// let blog =  'the blog called ' + title + ' by ' + author + ' has ' + like + ' likes';
+// console.log(blog);
+
+// template string way
+let blog = `the blog called ${title} by ${author} has ${like} likes`;
+console.log(blog);
+
+// creating html template
+
+let html = `
+
+    <h2>${title}</h2>
+    <p>by ${author}</p>
+    <span> this blog has ${like} likes</span>
+
+`;
+console.log(html);
 
 
 
