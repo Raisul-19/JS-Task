@@ -164,6 +164,50 @@ console.log(html);
 
 
 
+//  array  
+
+let ninjas = ['raisul', 'islam', 'hridoy']; // string type arry
+
+console.log(ninjas);
+console.log(ninjas[1]);
+
+ninjas[2] = 'habib';   //  over write a value
+
+console.log(ninjas);
+console.log(ninjas[2]);
+
+
+let ages = [20, 25, 30, 35]; // number type array
+console.log(ages[3]);
+
+
+let random = ['saun', 'cristyan', 30, 25.43];  // random type array
+console.log(random);
+
+// joining
+
+let joining = ninjas.join(',');
+console.log(joining);
+
+
+let con = ninjas.concat('joy', 'ornob');
+
+console.log(con);
+
+let pushing = ninjas.push('jon');  // pushing a new valu
+
+console.log(ninjas);
+
+
+let deleting = ninjas.pop()  // for delet the last value 
+
+console.log(ninjas);
+console.log(deleting);
+
+
+
+
+
 
 
 
