@@ -209,5 +209,109 @@ console.log(deleting);
 
 
 
+//  null
+
+let yar = null;
+console.log(yar, yar+5, `this yesr is ${yar}`);
+
+
+
+
+// boolean
+
+
+
+console.log(true, false, 'true', 'fasle'); // boolean and comparisons
+
+// method can be return
+email;
+let names = ['raisul', 'islam', 'hridoy'];
+
+let checkEmail = email.includes('@');
+let checkName = names.includes('ridoy');
+
+console.log(checkEmail);
+console.log(checkName);
+
+
+// comparison operator
+
+let boyos = 25;
+
+console.log(boyos == 25);   // that is true
+console.log(boyos == 30);   // thai is fallse
+console.log(boyos != 34); // that is also true
+console.log(boyos < 34); // that is also true
+console.log(boyos > 34); // that is also false
+console.log(boyos >= 25); // that is also true
+console.log(boyos <= 34); // that is also true
+
+
+
+let nam = 'hridoy';
+
+console.log(nam == 'hridoy');  // that is true
+console.log(nam == 'Hridoy');   // that is false cause thera have a upper case latter
+console.log(nam < 'raisul');    // true because (  r   ) is big from (  H  ) latter for alfabetical way
+console.log(nam > 'Raisul');    // true because lower case later is big from uppercase latter
+console.log(nam < 'Hridoy');    // false because lower case later is big from uppercase latter
+
+
+// loose comparison  ( diffferent type of data can be equal)
+
+console.log(boyos == 25);      //number type
+console.log(boyos == '25');    //string type
+
+
+// loose comparison  ( diffferent type of data can be equal)
+
+console.log(boyos === 25);    /// true   ( === for check same value and same data type   )
+console.log(boyos === '25');    /// false   ( === for check same value and same data type   )
+console.log(boyos !== 25);    /// false  ( !== for check same value and same data type   )
+console.log(boyos !== '25');    /// true   ( !== for check same value and same data type   )
+
+
+
+
+//  data type converson
+
+let scor = '100';
+
+console.log(typeof(scor));
+console.log(scor + 1);   // this is adding one on the last of scor (1001) cauese scor is a string
+
+scor = Number(scor);
+
+console.log(scor + 1);   // now it add 100+1 = 1 becuse now score is a number
+console.log(typeof score);
+
+
+//  string to number
+
+let gred = Number('hello');
+
+console.log(gred); // NaN , because is not a number
+
+// number to string
+
+let point = String(50);
+
+console.log(point, typeof point);  // it posible cause a number can be a string 
+
+// boolean 
+let boll = Boolean(100);
+let boll2 = Boolean(0);
+let boll3 = Boolean(-12);
+
+let boll4 = Boolean('0');
+
+console.log(boll, typeof boll);
+console.log(boll2, typeof boll2);   // false because 0 is not a true value for boolean
+console.log(boll3, typeof boll3);
+
+console.log(boll4, typeof boll4);   //true cause a string can be a boolean
+
+
+
 
 
