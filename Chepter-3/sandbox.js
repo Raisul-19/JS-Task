@@ -1,52 +1,128 @@
-//  For loop --
+//  if statments
 
- for (i = 0; i < 5; i++){
-     console.log('in for loop : ', i);
- }
+let age =  25;
 
- console.log('for loop finished');
-
-const name = ['raisul','islam','hridoy'];
-
-for (let i = 0; i < name.length; i++){
-    // console.log(i);   // for index
-    // console.log(name[i]);   ///  for the listed item
-
-    let html = `<div>${name[i]}</div>`;
-
-    console.log(html);
-
-
+if (age > 20){
+    console.log("you are in over 20 yeays old");
 }
 
+const ninjas = ['raisul', 'islam', 'hridoy'];
 
-//   while loop  ----
-
-let j = 0;
-
-while(j < 5){
-    console.log('in while loop : ', j);
-    j++;
-}
-console.log('while loop finished');
-
-
-const names = ['raisul', 'islam', 'hridoy'];
-
-let n = 0;
-
-while(n < names.length){
-    console.log(names[n]);
-    n++;
+if (ninjas.length > 2){
+    console.log("that's a lot of ninjas ");
 }
 
+const password = 'password';
+if(password.length >= 12){
+    console.log("that's password migthy strong !");
+}
+else if(password.length >= 8){
+    console.log('that password is long enough !');
+}
+else{
+    console.log("that's password is not long enough !");
+    
+}
 
-//  do while loop  -- 
+// logical opperaion   - OR ||  and  AND &&  :
 
-let w = 2;   // if initial valu is 5 or gretar then it only show one time to this value
+const pass = 'pa@ssword';
 
-do{
-    console.log('value is : ', w);
-    w++;
-} while(w < 5);
+if(pass.length >= 12 && pass.includes('@')){             //   &&  AND opperator
+    console.log("that's password mighty strong !");
+}
+else if(pass.length >= 8 || pass.includes('@') && pass.length >= 5){    /// OR || operator
+    console.log('that password is Strong enough !');
+}
+else{
+    console.log("that's password is not strong enough !");
+    
+}
+// Not oppeartor  ( ! )
 
+let user = false;
+
+if(!user){
+    console.log('you must logged in to be ccontinue');
+}
+console.log(true);    // it means true value
+console.log(false);   // it means false value
+
+console.log(!true);    // it means  false value
+console.log(!false);   // it means true value
+
+// break and continue
+
+const score = [50, 30, 0, 100, 20, 70];
+
+for (let i = 0; i = score.length; i++){
+    console.log('your score : ', score[i]);
+
+    if (score[i] === 0){
+        continue
+    }
+
+    if (score[i] === 100){
+        console.log('congratulations !  You got top score ');
+
+        break;
+    }
+}
+
+// switch stament   
+
+const grade = 'D';
+
+switch(grade){
+    case 'A':
+        console.log('you got A !');
+        break;
+    case 'B':
+        console.log('you got B !');
+        break;
+    case 'C':
+        console.log('you got C !');
+        break;
+    case 'D':
+        console.log('you got D !');
+        break;
+    case 'E':
+        console.log('you got E !');
+        break;
+    default:
+        console.log('this is not a valid value');
+}
+
+// using if statment
+
+// if(grade === 'A'){
+
+// } else if(grade === 'B'){
+
+// } else if(grade === 'C'){
+    
+// } else if(grade === 'D'){
+    
+// } else if(grade === 'E'){
+    
+// } else{
+
+// }
+
+
+// variable and block scope
+
+let aged = 50;
+
+if(true){
+    let aged = 30;
+    let named = 'hridoy';
+    console.log('inside age is : ', aged, named);
+
+    if(true){
+        let aged = 20;
+        console.log('2nd inside age : ', aged);
+    }
+}
+
+console.log('outside age is : ', aged);
